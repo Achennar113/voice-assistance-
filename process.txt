@@ -1,0 +1,69 @@
+# Steps to Run Vajra Voice Assistant in PyCharm
+
+Follow these simple steps to run the Vajra Voice Assistant project in the PyCharm IDE.
+
+## Prerequisites
+
+- Install [Python](https://www.python.org/downloads/).
+- Install [PyCharm](https://www.jetbrains.com/pycharm/download/).
+
+## Steps
+
+1. **Clone the Repository**
+
+    If you have Git installed, you can clone the repository directly from PyCharm. If not, you can download the ZIP file from the repository and extract it to a folder on your system.
+
+    **To clone the repository using Git:**
+
+    - Open PyCharm.
+    - Go to `VCS` > `Get from Version Control`.
+    - Enter the repository URL and clone it.
+
+    **To use the ZIP file:**
+
+    - Download the ZIP file from the repository.
+    - Extract the contents to a folder on your system.
+
+2. **Open the Project in PyCharm**
+
+    - Open PyCharm.
+    - Go to `File` > `Open`.
+    - Select the folder where the project files are located and click `OK`.
+
+3. **Set Up a Virtual Environment**
+
+    - Go to `File` > `Settings` (or `PyCharm` > `Preferences` on macOS).
+    - Navigate to `Project: <your_project_name>` > `Python Interpreter`.
+    - Click the gear icon and select `Add...`.
+    - Choose `New environment` and ensure `Virtualenv` is selected.
+    - Click `OK`.
+
+4. **Install Dependencies**
+
+    - Open the `Terminal` tab in PyCharm (usually located at the bottom of the window).
+    - Run the following command to install the required dependencies:
+      ```bash
+      pip install speechrecognition pyttsx3 pywhatkit wikipedia pyjokes pillow requests
+      ```
+
+5. **Run the Application**
+
+    - Locate the `vajra.py` file in the Project Explorer (usually on the left side of the window).
+    - Right-click on `vajra.py` and select `Run 'vajra'`.
+
+6. **Interact with the Application**
+
+    - A GUI window will appear.
+    - Click anywhere in the window to start the voice recognition.
+    - Say "Vajra" followed by your command, such as:
+      - "Vajra, play Despacito"
+      - "Vajra, what time is it?"
+      - "Vajra, tell me about Albert Einstein"
+      - "Vajra, tell me a joke"
+
+## Troubleshooting
+
+- **Microphone Access**: Ensure your microphone is properly configured and accessible by the application.
+- **Dependencies**: Verify that all required libraries are installed.
+- **Internet Connection**: Ensure you have an active internet connection for accessing YouTube, Wikipedia, and fetching the background image.
+
